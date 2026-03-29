@@ -1,3 +1,4 @@
+
 :root {
   --marble:       #D4CFC8;
   --marble-mid:   #B8B2AA;
@@ -83,8 +84,14 @@ body::before {
   backdrop-filter: blur(16px);
   border-color: var(--border);
 }
-[data-theme="light"] #nav.scrolled {
-  background: rgba(232, 227, 218, 0.9);
+/* quando menu mobile está aberto, fundo sólido para não conflitar com o hero */
+#nav.menu-open {
+  background: var(--bg);
+  border-color: var(--border);
+}
+[data-theme="light"] #nav.scrolled,
+[data-theme="light"] #nav.menu-open {
+  background: rgba(232, 227, 218, 0.97);
 }
 .nav-inner {
   max-width: 1200px;
@@ -151,7 +158,7 @@ body::before {
 [data-theme="dark"] .toggle-sun  { opacity: 0.3; }
 [data-theme="dark"] .toggle-moon { opacity: 1; color: var(--marble); }
 /* light mode: sun lit, moon dim */
-[data-theme="light"] .toggle-sun  { opacity: 1; color: #B8860B; }
+[data-theme="light"] .toggle-sun  { opacity: 1; color: var(--text-primary); }
 [data-theme="light"] .toggle-moon { opacity: 0.3; }
 
 .toggle-track {
@@ -174,7 +181,7 @@ body::before {
 }
 [data-theme="light"] .toggle-thumb {
   transform: translateX(16px);
-  background: #B8860B;
+  background: var(--text-muted);
 }
 [data-theme="dark"] .toggle-thumb {
   transform: translateX(0);
@@ -203,6 +210,7 @@ body::before {
   border-top: 1px solid var(--border);
   max-width: 1200px;
   margin: 0 auto;
+  background: var(--bg);
 }
 .mobile-menu.open { display: flex; }
 .mobile-link {
@@ -233,7 +241,7 @@ body::before {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--font-display);
-  font-size: clamp(6rem, 13vw, 20rem);
+  font-size: clamp(6rem, 18vw, 20rem);
   font-weight: 300;
   letter-spacing: 0.15em;
   color: transparent;
@@ -776,7 +784,6 @@ section {
 .form-note.success { color: #5cb85c; }
 .form-note.error { color: var(--crimson-light); }
 
-/* Atlas logo has dark text on light bg — keep white in dark, transparent in light */
 .atlas-logo {
   background: #F5F2EE;
   padding: 4px 10px;
@@ -785,7 +792,6 @@ section {
   background: transparent;
   padding: 0;
 }
-/* VemMercado logo is green on white — always needs white bg */
 [data-theme="light"] .project-logo:not(.atlas-logo) {
   background: #fff;
 }
@@ -838,7 +844,6 @@ footer {
 #hero .reveal:nth-child(3) { transition-delay: 0.75s; }
 #hero .reveal:nth-child(4) { transition-delay: 0.9s; }
 
-/* --- RESPONSIVE -------------------------------------------- */
 @media (max-width: 900px) {
   .sobre-grid { grid-template-columns: 1fr; }
   .sobre-photo { max-width: 300px; }

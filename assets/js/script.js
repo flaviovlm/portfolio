@@ -1,6 +1,4 @@
-/* ============================================================
-   FLÁVIO VIEIRA LIMA — PORTFOLIO · script.js
-   ============================================================ */
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -18,11 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
     mobileMenu.classList.toggle('open');
+    nav.classList.toggle('menu-open');
   });
   document.querySelectorAll('.mobile-link').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
       mobileMenu.classList.remove('open');
+      nav.classList.remove('menu-open');
     });
   });
 
@@ -107,13 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Open Gmail web compose
+      // Abre mailto — mais confiável no celular
       const assunto = form.assunto.value.trim() || 'Contato pelo portfólio';
       const body = `Olá Flávio,\n\n${mensagem}\n\n—\n${nome}\n${email}`;
-      const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&to=flaviovieira.lm@gmail.com&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(body)}`;
-      window.open(gmailUrl, '_blank', 'noopener');
+      const mailto = `mailto:flaviovieira.lm@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
 
-      note.textContent = 'Gmail aberto em nova aba. Só enviar!';
+      note.textContent = 'Abrindo seu app de e-mail...';
       note.className = 'form-note success';
 
       setTimeout(() => {
