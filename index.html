@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="assets/img/logo-fvl.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flávio Vieira Lima — Dev Full Stack</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">FVL</a>      
+      <ul class="nav-links">
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Stack</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/escuro">
+        <span class="toggle-sun">☀</span>
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+        <span class="toggle-moon">☽</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#projetos" class="mobile-link">Projetos</a>
+      <a href="#sobre" class="mobile-link">Sobre</a>
+      <a href="#habilidades" class="mobile-link">Stack</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-text">DEVELOPER</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Engenharia de Software · Salvador, BA</p>
+      <h1 class="hero-name reveal">
+        <span class="name-flavio">Flávio</span><br />
+        <span class="name-vieira">Vieira</span>
+        <span class="name-lima">Lima</span>
+      </h1>
+      <p class="hero-sub reveal">Desenvolvedor Full Stack · Java & React</p>
+      <div class="hero-cta reveal">
+        <a href="#projetos" class="btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn-ghost">Entrar em Contato</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-ornament">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="0.5" />
+        <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="0.5" />
+        <line x1="10" y1="100" x2="190" y2="100" stroke="currentColor" stroke-width="0.5" />
+        <line x1="100" y1="10" x2="100" y2="190" stroke="currentColor" stroke-width="0.5" />
+        <circle cx="100" cy="100" r="4" fill="currentColor" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="section-header reveal">
+      <span class="section-number">01</span>
+      <h2 class="section-title">Projetos</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- VemMercado -->
+      <article class="project-card reveal" data-index="0">
+        <div class="project-card-inner">
+          <div class="project-header">
+            <div class="project-logo-wrap" id="logo-vem">
+              <img src="assets/img/vemmercado-logo.png" alt="VemMercado" class="project-logo" />
+            </div>
+            <a href="https://github.com/flaviovlm/VemMercado" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-name">VemMercado</h3>
+          <p class="project-type">E-commerce Full Stack · Projeto em Equipe</p>
+          <p class="project-desc">E-commerce completo com foco em desempenho, escalabilidade e boas práticas de arquitetura. Integra Java Spring Boot no back-end, React no front-end e Supabase (PostgreSQL) como banco de dados na nuvem.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Spring Boot</span><span>React</span><span>Supabase</span><span>PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-card-border"></div>
+      </article>
+
+      <!-- Atlas Support -->
+      <article class="project-card reveal" data-index="1">
+        <div class="project-card-inner">
+          <div class="project-header">
+            <div class="project-logo-wrap">
+              <img src="assets/img/atlas-logo.png" alt="Atlas Support" class="project-logo atlas-logo" />
+            </div>
+            <a href="https://github.com/guilhermezw/atlas-support" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-name">Atlas Support</h3>
+          <p class="project-type">Sistema Help Desk · Projeto em Equipe</p>
+          <p class="project-desc">Sistema simulando um help desk corporativo com solicitantes, técnicos de N1 a N3 e administrador. Fluxo completo de chamados com diferentes níveis de acesso e atribuição de tickets.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Spring Boot</span><span>React</span><span>Supabase</span><span>PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-card-border"></div>
+      </article>
+
+    </div>
+
+    <p class="projects-note reveal">Ambos os projetos desenvolvidos em equipe — experiência real com versionamento Git e metodologias ágeis.</p>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="section-header reveal">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Sobre</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="sobre-grid">
+      <div class="sobre-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/img/foto.jpg" alt="Flávio Vieira Lima" class="profile-photo" onerror="this.parentElement.classList.add('no-photo')" />
+          <div class="photo-ornament-tl"></div>
+          <div class="photo-ornament-br"></div>
+        </div>
+      </div>
+      <div class="sobre-text reveal">
+        <p class="sobre-age">20 anos · Salvador, BA</p>
+        <h3 class="sobre-headline">Desenvolvedor Full Stack em formação, com foco em Java e React.</h3>
+        <p class="sobre-body">
+          Estudante de Engenharia de Software na Faculdade Anhanguera e concluindo o curso técnico em Desenvolvimento de Sistemas no SENAI (previsão: julho/2026). Atuo como Atendente I na Raia Drogasil, onde opero sistemas ERP, desenvolvi disciplina com processos e ganho experiência prática em ambientes de alta demanda.
+        </p>
+        <p class="sobre-body">
+          Construo aplicações Full Stack com Java Spring Boot, React e PostgreSQL. Tenho experiência real com trabalho em equipe através de projetos acadêmicos versionados no GitHub, aplicando boas práticas de arquitetura e metodologias ágeis.
+        </p>
+        <div class="sobre-badges">
+          <span>SENAI — Técnico em Dev. de Sistemas</span>
+          <span>Anhanguera — Eng. de Software</span>
+          <span>Raia Drogasil — Atendente I</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades">
+    <div class="section-header reveal">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Stack</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-container">
+      <div class="skills-category reveal">
+        <h4 class="skills-cat-title">Back-End</h4>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Spring Boot</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">SQL</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-divider"></div>
+
+      <div class="skills-category reveal">
+        <h4 class="skills-cat-title">Front-End</h4>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">React.js</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="72"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">HTML / CSS</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-divider"></div>
+
+      <div class="skills-category reveal">
+        <h4 class="skills-cat-title">Banco de Dados</h4>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">PostgreSQL</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">MySQL</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="68"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Supabase</span>
+            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-divider"></div>
+
+      <div class="skills-category reveal">
+        <h4 class="skills-cat-title">Ferramentas</h4>
+        <div class="skills-pills reveal">
+          <span>Git</span><span>GitHub</span><span>VS Code</span><span>IntelliJ</span><span>Metodologias Ágeis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="section-header reveal">
+      <span class="section-number">04</span>
+      <h2 class="section-title">Contato</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contato-grid">
+      <div class="contato-info reveal">
+        <p class="contato-headline">Aberto a oportunidades de estágio e projetos.</p>
+        <div class="contato-links">
+          <a href="https://mail.google.com/mail/u/0/?view=cm&to=flaviovieira.lm@gmail.com" target="_blank" rel="noopener" class="contato-link">
+            <span class="contato-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </span>
+            <span>flaviovieira.lm@gmail.com</span>
+          </a>
+          <a href="https://github.com/flaviovlm" target="_blank" rel="noopener" class="contato-link">
+            <span class="contato-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </span>
+            <span>github.com/flaviovlm</span>
+          </a>
+          <a href="https://www.linkedin.com/in/flavio-vieira-lima/" target="_blank" rel="noopener" class="contato-link">
+            <span class="contato-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </span>
+            <span>linkedin.com/in/flavio-vieira-lima</span>
+          </a>
+        </div>
+        <a href="docs/curriculo.pdf" download="Flavio_Vieira_Lima_Curriculo.pdf" class="btn-download reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg>
+          Baixar Currículo
+        </a>
+      </div>
+
+      <form class="contato-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" />
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-submit">
+          <span class="btn-text">Enviar Mensagem</span>
+          <span class="btn-arrow">→</span>
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-name">Flávio Vieira Lima</span>
+      <span class="footer-copy">© 2025 · Desenvolvido com dedicação</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
