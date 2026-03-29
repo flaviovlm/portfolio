@@ -206,11 +206,14 @@ body::before {
 .mobile-menu {
   display: none;
   flex-direction: column;
-  padding: 1rem 0 1.5rem;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 2rem 1.5rem;
   border-top: 1px solid var(--border);
-  max-width: 1200px;
-  margin: 0 auto;
   background: var(--bg);
+  z-index: 99;
 }
 .mobile-menu.open { display: flex; }
 .mobile-link {
@@ -218,10 +221,11 @@ body::before {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-muted);
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--border);
   transition: color var(--transition);
 }
+.mobile-link:last-child { border-bottom: none; }
 .mobile-link:hover { color: var(--text-accent); }
 
 /* --- HERO -------------------------------------------------- */
@@ -784,6 +788,7 @@ section {
 .form-note.success { color: #5cb85c; }
 .form-note.error { color: var(--crimson-light); }
 
+/* Atlas logo has dark text on light bg — keep white in dark, transparent in light */
 .atlas-logo {
   background: #F5F2EE;
   padding: 4px 10px;
@@ -792,6 +797,7 @@ section {
   background: transparent;
   padding: 0;
 }
+/* VemMercado logo is green on white — always needs white bg */
 [data-theme="light"] .project-logo:not(.atlas-logo) {
   background: #fff;
 }
@@ -844,6 +850,7 @@ footer {
 #hero .reveal:nth-child(3) { transition-delay: 0.75s; }
 #hero .reveal:nth-child(4) { transition-delay: 0.9s; }
 
+/* --- RESPONSIVE -------------------------------------------- */
 @media (max-width: 900px) {
   .sobre-grid { grid-template-columns: 1fr; }
   .sobre-photo { max-width: 300px; }
